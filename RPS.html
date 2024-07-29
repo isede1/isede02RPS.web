@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new.css">
+  <title>ROCK,PAPER AND SCISSORS</title>
+</head>
+<body> 
+  <!-- This is my container -->
+    <div class="container">
+      <!-- header section-->
+       <header> 
+        <!-- Title section -->
+          <p class="title">ROCK PAPER AND SCISSORS</p> 
+            <!-- This is the rock button used when click-->
+                <button onclick="playgame('rock')" class="move_btn" ><img src="rock-emoji.png" class="move-icon"></button> 
+                  <!-- This is the paper button used when click-->
+                     <button onclick="playgame('paper')" class="move_btn"><img src="paper.png" class="move-icon"></button> 
+                      <!-- This is the scissors button used when click-->
+                        <button onclick="playgame('scissors')" class="move_btn"><img src="scissors.png" class="move-icon"></button>
+                        <!-- This is the result that is shown when you click the button above that shows if you win lose or ties-->
+                       <p id="js-result">you win</p> 
+                      <!-- This is the section where what you pick and what computer pick will be displayed-->
+                     <p id="js-score">you picked -. computer picked -.</p> 
+                  <!-- This shows the amount of win loss and ties that the player has undergo-->
+                 <p id="p1">wins: 0, lose: 0, Ties: 0</p> 
+              <!-- The button below reset all the scores display and take them back to zero-->
+          <button onclick=" Scorereading()" class="reset">Reset score</button>
+      </header> 
+      <!-- This is my script tag used for styling my javascript-->
+     <script src="RPS.js"></script>
+  </div>
+</body>
+</html>  
